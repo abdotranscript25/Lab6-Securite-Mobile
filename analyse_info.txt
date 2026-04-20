@@ -1,0 +1,10 @@
+Date d'analyse : Mon 20 Apr 2026 10:05:59 AM EDT
+Analyste : El Hachimi Abdelhamid
+VM Mobexler version : Version non disponible
+APK analysé : app-debug.apk
+55ea8b021a8480b2c5a575e27f2a9dcb120c7d7961b69a6ad201639de76e2007  app-debug.apk
+Security Score : 41/100
+MobSF version : 4.5.0
+Date d'analyse : Mon 20 Apr 2026 11:05:37 AM EDT
+Rapport exporté : document.pdf
+Emplacement : ~/APK-Analysis/

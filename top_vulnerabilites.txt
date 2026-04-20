@@ -1,0 +1,38 @@
+Top vulnérabilités - ProjetWS
+=============================
+
+--- VULNÉRABILITÉS CRITIQUES ---
+1. Trafic en clair (HTTP)
+   - Localisation: AndroidManifest.xml (usesCleartextTraffic=true)
+   - Impact: Données des étudiants en clair sur le réseau
+   - Référence MASVS: MSTG-NETWORK-1
+
+2. Mode débogage activé
+   - Localisation: AndroidManifest.xml (debuggable=true)
+   - Impact: Reverse engineering facilité, débogage en temps réel
+   - Référence MASVS: MSTG-CODE-1
+
+3. Backup activé
+   - Localisation: AndroidManifest.xml (allowBackup=true)
+   - Impact: Extraction de la base de données via adb backup
+   - Référence MASVS: MSTG-STORAGE-4
+
+4. Certificat de debug
+   - Localisation: Signature de l'APK
+   - Impact: Application signée avec certificat non sécurisé
+   - Référence MASVS: MSTG-CODE-2
+
+5. Secrets hardcodés (URLs HTTP)
+   - Localisation: AddEtudiant.java, ListEtudiant.java
+   - Impact: Exposition de l'architecture interne
+   - Référence MASVS: MSTG-STORAGE-14
+
+--- FAUX POSITIFS POTENTIELS ---
+1. Network Security Configuration (INFO)
+   - Raison: C'est une configuration, pas une vulnérabilité
+
+2. URLs GitHub (documentation RxJava)
+   - Raison: Liens vers documentation légitime, pas des secrets
+
+3. Min SDK 24 (Android 7.0) - INFO
+   - Raison: C'est un choix de compatibilité, pas une vulnérabilité directe
